@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A1B3C5E2D4A8F0012345678 /* SentinelHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C5D2D4A8F0012345678 /* SentinelHealthApp.swift */; };
+		2A1B3C602D4A8F0012345679 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C5F2D4A8F0012345679 /* MenuBarView.swift */; };
+		2A1B3C622D4A8F001234567A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C612D4A8F001234567A /* SettingsView.swift */; };
+		2A1B3C642D4A8F001234567B /* SentinelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C632D4A8F001234567B /* SentinelError.swift */; };
+		2A1B3C662D4A8F001234567C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C652D4A8F001234567C /* Logging.swift */; };
+		2A1B3C682D4A8F001234567D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C672D4A8F001234567D /* Constants.swift */; };
+		/* Core */
+		2A1B3C802D4A8F0012345690 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C7F2D4A8F0012345690 /* ApplicationController.swift */; };
+		/* Models */
+		2A1B3C822D4A8F0012345692 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C812D4A8F0012345692 /* DataStore.swift */; };
+		2A1B3C842D4A8F0012345694 /* OffloadedProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C832D4A8F0012345694 /* OffloadedProcess.swift */; };
+		2A1B3C862D4A8F0012345696 /* ThermalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C852D4A8F0012345696 /* ThermalEvent.swift */; };
+		2A1B3C882D4A8F0012345698 /* ThermalPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C872D4A8F0012345698 /* ThermalPrediction.swift */; };
+		/* Services */
+		2A1B3C8A2D4A8F001234569A /* HistoricalAnalyticsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C892D4A8F001234569A /* HistoricalAnalyticsStore.swift */; };
+		2A1B3C8C2D4A8F001234569C /* MetricsAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C8B2D4A8F001234569C /* MetricsAggregator.swift */; };
+		2A1B3C8E2D4A8F001234569E /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C8D2D4A8F001234569E /* NotificationCoordinator.swift */; };
+		2A1B3C902D4A8F00123456A0 /* ProcessEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C8F2D4A8F00123456A0 /* ProcessEnumerator.swift */; };
+		2A1B3C922D4A8F00123456A2 /* ProcessOffloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C912D4A8F00123456A2 /* ProcessOffloadManager.swift */; };
+		2A1B3C942D4A8F00123456A4 /* ThermalIntelligenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C932D4A8F00123456A4 /* ThermalIntelligenceEngine.swift */; };
+		2A1B3C962D4A8F00123456A6 /* ThermalStateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C952D4A8F00123456A6 /* ThermalStateMonitor.swift */; };
+		2A1B3C982D4A8F00123456A8 /* UnifiedMemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C972D4A8F00123456A8 /* UnifiedMemoryMonitor.swift */; };
+		/* New files */
+		2A1B3CA02D4A8F00123456B0 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C9F2D4A8F00123456B0 /* SettingsManager.swift */; };
+		2A1B3CA22D4A8F00123456B2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CA12D4A8F00123456B2 /* SharedTypes.swift */; };
+		2A1B3CA42D4A8F00123456B4 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CA32D4A8F00123456B4 /* XPCServiceProtocol.swift */; };
+		2A1B3CA62D4A8F00123456B6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CA52D4A8F00123456B6 /* OnboardingView.swift */; };
+		2A1B3CA82D4A8F00123456B8 /* AnalyticsDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CA72D4A8F00123456B8 /* AnalyticsDashboardView.swift */; };
+		2A1B3CAA2D4A8F00123456BA /* HelperInstallationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CA92D4A8F00123456BA /* HelperInstallationView.swift */; };
+		2A1B3CAC2D4A8F00123456BC /* OffloadedProcessesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CAB2D4A8F00123456BC /* OffloadedProcessesListView.swift */; };
+		2A1B3CAE2D4A8F00123456BE /* PremiumVisualEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3CAD2D4A8F00123456BE /* PremiumVisualEffects.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A1B3C582D4A8F0012345670 /* SentinelHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentinelHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1B3C5D2D4A8F0012345678 /* SentinelHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentinelHealthApp.swift; sourceTree = "<group>"; };
+		2A1B3C5F2D4A8F0012345679 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		2A1B3C612D4A8F001234567A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A1B3C632D4A8F001234567B /* SentinelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentinelError.swift; sourceTree = "<group>"; };
+		2A1B3C652D4A8F001234567C /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		2A1B3C672D4A8F001234567D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		/* Core */
+		2A1B3C7F2D4A8F0012345690 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		/* Models */
+		2A1B3C812D4A8F0012345692 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2A1B3C832D4A8F0012345694 /* OffloadedProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffloadedProcess.swift; sourceTree = "<group>"; };
+		2A1B3C852D4A8F0012345696 /* ThermalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalEvent.swift; sourceTree = "<group>"; };
+		2A1B3C872D4A8F0012345698 /* ThermalPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalPrediction.swift; sourceTree = "<group>"; };
+		/* Services */
+		2A1B3C892D4A8F001234569A /* HistoricalAnalyticsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalAnalyticsStore.swift; sourceTree = "<group>"; };
+		2A1B3C8B2D4A8F001234569C /* MetricsAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsAggregator.swift; sourceTree = "<group>"; };
+		2A1B3C8D2D4A8F001234569E /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
+		2A1B3C8F2D4A8F00123456A0 /* ProcessEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessEnumerator.swift; sourceTree = "<group>"; };
+		2A1B3C912D4A8F00123456A2 /* ProcessOffloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOffloadManager.swift; sourceTree = "<group>"; };
+		2A1B3C932D4A8F00123456A4 /* ThermalIntelligenceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalIntelligenceEngine.swift; sourceTree = "<group>"; };
+		2A1B3C952D4A8F00123456A6 /* ThermalStateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalStateMonitor.swift; sourceTree = "<group>"; };
+		2A1B3C972D4A8F00123456A8 /* UnifiedMemoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedMemoryMonitor.swift; sourceTree = "<group>"; };
+		/* New files */
+		2A1B3C9F2D4A8F00123456B0 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		2A1B3CA12D4A8F00123456B2 /* SharedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
+		2A1B3CA32D4A8F00123456B4 /* XPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceProtocol.swift; sourceTree = "<group>"; };
+		2A1B3CA52D4A8F00123456B6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2A1B3CA72D4A8F00123456B8 /* AnalyticsDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDashboardView.swift; sourceTree = "<group>"; };
+		2A1B3CA92D4A8F00123456BA /* HelperInstallationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInstallationView.swift; sourceTree = "<group>"; };
+		2A1B3CAB2D4A8F00123456BC /* OffloadedProcessesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffloadedProcessesListView.swift; sourceTree = "<group>"; };
+		2A1B3CAD2D4A8F00123456BE /* PremiumVisualEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumVisualEffects.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1B3C552D4A8F0012345670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1B3C4F2D4A8F0012345670 = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C5A2D4A8F0012345670 /* SentinelHealth */,
+				2A1B3C592D4A8F0012345670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A1B3C592D4A8F0012345670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C582D4A8F0012345670 /* SentinelHealth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A1B3C5A2D4A8F0012345670 /* SentinelHealth */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C5D2D4A8F0012345678 /* SentinelHealthApp.swift */,
+				2A1B3C6A2D4A8F001234567E /* Core */,
+				2A1B3C6B2D4A8F001234567F /* Views */,
+				2A1B3C6C2D4A8F0012345680 /* Models */,
+				2A1B3C6D2D4A8F0012345681 /* Services */,
+				2A1B3C6E2D4A8F0012345682 /* Resources */,
+			);
+			path = SentinelHealth;
+			sourceTree = "<group>";
+		};
+		2A1B3C6A2D4A8F001234567E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C7F2D4A8F0012345690 /* ApplicationController.swift */,
+				2A1B3C672D4A8F001234567D /* Constants.swift */,
+				2A1B3C652D4A8F001234567C /* Logging.swift */,
+				2A1B3C632D4A8F001234567B /* SentinelError.swift */,
+				2A1B3C9F2D4A8F00123456B0 /* SettingsManager.swift */,
+				2A1B3CA12D4A8F00123456B2 /* SharedTypes.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2A1B3C6B2D4A8F001234567F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C5F2D4A8F0012345679 /* MenuBarView.swift */,
+				2A1B3C612D4A8F001234567A /* SettingsView.swift */,
+				2A1B3CA52D4A8F00123456B6 /* OnboardingView.swift */,
+				2A1B3CA72D4A8F00123456B8 /* AnalyticsDashboardView.swift */,
+				2A1B3CA92D4A8F00123456BA /* HelperInstallationView.swift */,
+				2A1B3C6F2D4A8F0012345683 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A1B3C6C2D4A8F0012345680 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C812D4A8F0012345692 /* DataStore.swift */,
+				2A1B3C832D4A8F0012345694 /* OffloadedProcess.swift */,
+				2A1B3C852D4A8F0012345696 /* ThermalEvent.swift */,
+				2A1B3C872D4A8F0012345698 /* ThermalPrediction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A1B3C6D2D4A8F0012345681 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3C892D4A8F001234569A /* HistoricalAnalyticsStore.swift */,
+				2A1B3C8B2D4A8F001234569C /* MetricsAggregator.swift */,
+				2A1B3C8D2D4A8F001234569E /* NotificationCoordinator.swift */,
+				2A1B3C8F2D4A8F00123456A0 /* ProcessEnumerator.swift */,
+				2A1B3C912D4A8F00123456A2 /* ProcessOffloadManager.swift */,
+				2A1B3C932D4A8F00123456A4 /* ThermalIntelligenceEngine.swift */,
+				2A1B3C952D4A8F00123456A6 /* ThermalStateMonitor.swift */,
+				2A1B3C972D4A8F00123456A8 /* UnifiedMemoryMonitor.swift */,
+				2A1B3CA32D4A8F00123456B4 /* XPCServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A1B3C6E2D4A8F0012345682 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A1B3C6F2D4A8F0012345683 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B3CAB2D4A8F00123456BC /* OffloadedProcessesListView.swift */,
+				2A1B3CAD2D4A8F00123456BE /* PremiumVisualEffects.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A1B3C572D4A8F0012345670 /* SentinelHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1B3C702D4A8F0012345684 /* Build configuration list for PBXNativeTarget "SentinelHealth" */;
+			buildPhases = (
+				2A1B3C542D4A8F0012345670 /* Sources */,
+				2A1B3C552D4A8F0012345670 /* Frameworks */,
+				2A1B3C562D4A8F0012345670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SentinelHealth;
+			productName = SentinelHealth;
+			productReference = 2A1B3C582D4A8F0012345670 /* SentinelHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A1B3C502D4A8F0012345670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2A1B3C572D4A8F0012345670 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 2A1B3C532D4A8F0012345670 /* Build configuration list for PBXProject "SentinelHealth" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A1B3C4F2D4A8F0012345670;
+			productRefGroup = 2A1B3C592D4A8F0012345670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A1B3C572D4A8F0012345670 /* SentinelHealth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A1B3C562D4A8F0012345670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A1B3C542D4A8F0012345670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1B3C5E2D4A8F0012345678 /* SentinelHealthApp.swift in Sources */,
+				2A1B3C602D4A8F0012345679 /* MenuBarView.swift in Sources */,
+				2A1B3C622D4A8F001234567A /* SettingsView.swift in Sources */,
+				2A1B3C642D4A8F001234567B /* SentinelError.swift in Sources */,
+				2A1B3C662D4A8F001234567C /* Logging.swift in Sources */,
+				2A1B3C682D4A8F001234567D /* Constants.swift in Sources */,
+				2A1B3C802D4A8F0012345690 /* ApplicationController.swift in Sources */,
+				2A1B3C822D4A8F0012345692 /* DataStore.swift in Sources */,
+				2A1B3C842D4A8F0012345694 /* OffloadedProcess.swift in Sources */,
+				2A1B3C862D4A8F0012345696 /* ThermalEvent.swift in Sources */,
+				2A1B3C882D4A8F0012345698 /* ThermalPrediction.swift in Sources */,
+				2A1B3C8A2D4A8F001234569A /* HistoricalAnalyticsStore.swift in Sources */,
+				2A1B3C8C2D4A8F001234569C /* MetricsAggregator.swift in Sources */,
+				2A1B3C8E2D4A8F001234569E /* NotificationCoordinator.swift in Sources */,
+				2A1B3C902D4A8F00123456A0 /* ProcessEnumerator.swift in Sources */,
+				2A1B3C922D4A8F00123456A2 /* ProcessOffloadManager.swift in Sources */,
+				2A1B3C942D4A8F00123456A4 /* ThermalIntelligenceEngine.swift in Sources */,
+				2A1B3C962D4A8F00123456A6 /* ThermalStateMonitor.swift in Sources */,
+				2A1B3C982D4A8F00123456A8 /* UnifiedMemoryMonitor.swift in Sources */,
+				2A1B3CA02D4A8F00123456B0 /* SettingsManager.swift in Sources */,
+				2A1B3CA22D4A8F00123456B2 /* SharedTypes.swift in Sources */,
+				2A1B3CA42D4A8F00123456B4 /* XPCServiceProtocol.swift in Sources */,
+				2A1B3CA62D4A8F00123456B6 /* OnboardingView.swift in Sources */,
+				2A1B3CA82D4A8F00123456B8 /* AnalyticsDashboardView.swift in Sources */,
+				2A1B3CAA2D4A8F00123456BA /* HelperInstallationView.swift in Sources */,
+				2A1B3CAC2D4A8F00123456BC /* OffloadedProcessesListView.swift in Sources */,
+				2A1B3CAE2D4A8F00123456BE /* PremiumVisualEffects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A1B3C712D4A8F0012345685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SentinelHealth/SentinelHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sentinel Health";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sentinel.health;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2A1B3C722D4A8F0012345686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SentinelHealth/SentinelHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sentinel Health";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sentinel.health;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2A1B3C732D4A8F0012345687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+		2A1B3C742D4A8F0012345688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1B3C532D4A8F0012345670 /* Build configuration list for PBXProject "SentinelHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1B3C732D4A8F0012345687 /* Debug */,
+				2A1B3C742D4A8F0012345688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1B3C702D4A8F0012345684 /* Build configuration list for PBXNativeTarget "SentinelHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1B3C712D4A8F0012345685 /* Debug */,
+				2A1B3C722D4A8F0012345686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A1B3C502D4A8F0012345670 /* Project object */;
+}
