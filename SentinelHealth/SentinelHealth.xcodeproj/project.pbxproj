@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1B3CB02D4A8F00123456C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B3CAF2D4A8F00123456BF /* Assets.xcassets */; };
 		2A1B3C5E2D4A8F0012345678 /* SentinelHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C5D2D4A8F0012345678 /* SentinelHealthApp.swift */; };
 		2A1B3C602D4A8F0012345679 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C5F2D4A8F0012345679 /* MenuBarView.swift */; };
 		2A1B3C622D4A8F001234567A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B3C612D4A8F001234567A /* SettingsView.swift */; };
@@ -73,6 +74,7 @@
 		2A1B3CA92D4A8F00123456BA /* HelperInstallationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInstallationView.swift; sourceTree = "<group>"; };
 		2A1B3CAB2D4A8F00123456BC /* OffloadedProcessesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffloadedProcessesListView.swift; sourceTree = "<group>"; };
 		2A1B3CAD2D4A8F00123456BE /* PremiumVisualEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumVisualEffects.swift; sourceTree = "<group>"; };
+		2A1B3CAF2D4A8F00123456BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		2A1B3C6E2D4A8F0012345682 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A1B3CAF2D4A8F00123456BF /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1B3CB02D4A8F00123456C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
